@@ -15,7 +15,8 @@ namespace csharp
             int originalQuality = 20;
             int updatedQuality = 19;
 
-            IList<Item> Items = new List<Item> { new Item { Name = "Normal Item", SellIn = originalSellIn, Quality = originalQuality } };
+            IList<GildedRoseItem> Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Normal Item", originalSellIn, originalQuality));
             GildedRose app = new GildedRose(Items);
 
             app.UpdateQuality();
@@ -35,7 +36,8 @@ namespace csharp
             // Quality degrades twice as fast when SellIn date has passed.
             int updatedQuality = 18;
 
-            IList<Item> Items = new List<Item> { new Item { Name = "Normal Item", SellIn = originalSellIn, Quality = originalQuality } };
+            IList<GildedRoseItem> Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Normal Item", originalSellIn, originalQuality));
             GildedRose app = new GildedRose(Items);
 
             app.UpdateQuality();
@@ -53,7 +55,8 @@ namespace csharp
             int originalQuality = 0;
             int updatedQuality = 0;
 
-            IList<Item> Items = new List<Item> { new Item { Name = "Normal Item", SellIn = originalSellIn, Quality = originalQuality } };
+            IList<GildedRoseItem> Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Normal Item", originalSellIn, originalQuality));
             GildedRose app = new GildedRose(Items);
 
             app.UpdateQuality();
@@ -67,7 +70,8 @@ namespace csharp
             originalQuality = 0;
             updatedQuality = 0;
 
-            Items = new List<Item> { new Item { Name = "Normal Item", SellIn = originalSellIn, Quality = originalQuality } };
+            Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Normal Item", originalSellIn, originalQuality));
             app = new GildedRose(Items);
 
             app.UpdateQuality();
@@ -85,7 +89,8 @@ namespace csharp
             int originalQuality = 20;
             int updatedQuality = 18;
 
-            IList<Item> Items = new List<Item> { new Item { Name = "Conjured Mana Cake", SellIn = originalSellIn, Quality = originalQuality } };
+            IList<GildedRoseItem> Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Conjured Mana Cake", originalSellIn, originalQuality));
             GildedRose app = new GildedRose(Items);
 
             app.UpdateQuality();
@@ -103,7 +108,8 @@ namespace csharp
             int originalQuality = 20;
             int updatedQuality = 16;
 
-            IList<Item> Items = new List<Item> { new Item { Name = "Conjured Mana Cake", SellIn = originalSellIn, Quality = originalQuality } };
+            IList<GildedRoseItem> Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Conjured Mana Cake", originalSellIn, originalQuality));
             GildedRose app = new GildedRose(Items);
 
             app.UpdateQuality();
@@ -121,7 +127,8 @@ namespace csharp
             int originalQuality = 20;
             int updatedQuality = 21;
 
-            IList<Item> Items = new List<Item> { new Item { Name = "Aged Brie", SellIn = originalSellIn, Quality = originalQuality } };
+            IList<GildedRoseItem> Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Aged Brie", originalSellIn, originalQuality));
             GildedRose app = new GildedRose(Items);
 
             app.UpdateQuality();
@@ -139,7 +146,8 @@ namespace csharp
             int originalQuality = 50;
             int updatedQuality = 50;
 
-            IList<Item> Items = new List<Item> { new Item { Name = "Aged Brie", SellIn = originalSellIn, Quality = originalQuality } };
+            IList<GildedRoseItem> Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Aged Brie", originalSellIn, originalQuality));
             GildedRose app = new GildedRose(Items);
 
             app.UpdateQuality();
@@ -157,7 +165,8 @@ namespace csharp
             int originalQuality = 80;
             int updatedQuality = 80;
 
-            IList<Item> Items = new List<Item> { new Item { Name = "Sulfuras, Hand of Ragnaros", SellIn = originalSellIn, Quality = originalQuality } };
+            IList<GildedRoseItem> Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Sulfuras, Hand of Ragnaros", originalSellIn, originalQuality));
             GildedRose app = new GildedRose(Items);
 
             app.UpdateQuality();
@@ -175,7 +184,8 @@ namespace csharp
             int originalQuality = 10;
             int updatedQuality = 11;
 
-            IList<Item> Items = new List<Item> { new Item { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = originalSellIn, Quality = originalQuality } };
+            IList<GildedRoseItem> Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Backstage passes to a TAFKAL80ETC concert", originalSellIn, originalQuality));
             GildedRose app = new GildedRose(Items);
 
             app.UpdateQuality();
@@ -193,7 +203,8 @@ namespace csharp
             int originalQuality = 10;
             int updatedQuality = 12;
 
-            IList<Item> Items = new List<Item> { new Item { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = originalSellIn, Quality = originalQuality } };
+            IList<GildedRoseItem> Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Backstage passes to a TAFKAL80ETC concert", originalSellIn, originalQuality));
             GildedRose app = new GildedRose(Items);
 
             app.UpdateQuality();
@@ -211,7 +222,8 @@ namespace csharp
             int originalQuality = 10;
             int updatedQuality = 13;
 
-            IList<Item> Items = new List<Item> { new Item { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = originalSellIn, Quality = originalQuality } };
+            IList<GildedRoseItem> Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Backstage passes to a TAFKAL80ETC concert", originalSellIn, originalQuality));
             GildedRose app = new GildedRose(Items);
 
             app.UpdateQuality();
@@ -229,7 +241,8 @@ namespace csharp
             int originalQuality = 10;
             int updatedQuality = 0;
 
-            IList<Item> Items = new List<Item> { new Item { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = originalSellIn, Quality = originalQuality } };
+            IList<GildedRoseItem> Items = new List<GildedRoseItem>();
+            Items.Add(ItemFactory.CreateItem("Backstage passes to a TAFKAL80ETC concert", originalSellIn, originalQuality));
             GildedRose app = new GildedRose(Items);
 
             app.UpdateQuality();
