@@ -1,11 +1,11 @@
-namespace Decorator
+﻿namespace DecoratorKata
 {
-    interface IHelloPrint
+    public interface IHelloPrint
     {
         string PrintHello();
     }
 
-    class HelloPrint : IHelloPrint
+    public class HelloPrint : IHelloPrint
     {
         public string PrintHello()
         {
@@ -13,7 +13,7 @@ namespace Decorator
         }
     }
 
-    class HelloPrintParenthesesDecorator : IHelloPrint
+    public class HelloPrintParenthesesDecorator : IHelloPrint
     {
         private IHelloPrint HelloPrinter;
 
@@ -28,7 +28,7 @@ namespace Decorator
         }
     }
 
-    class HelloPrintBracketDecorator : IHelloPrint
+    public class HelloPrintBracketDecorator : IHelloPrint
     {
         private IHelloPrint HelloPrinter;
 
